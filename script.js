@@ -26,3 +26,28 @@ particlesJS("particles-js", {
   },
   "retina_detect": true
 });
+const phrases = ["Youssef Gebsi", "Future Game Developer"];
+let part = 0;
+let partIndex = 0;
+let isDeleting = false;
+const element = document.getElementById("typewriter");
+
+function typeLoop() {
+  const text = phrases[part];
+  if (isDeleting) {
+    element.textContent = text.substring(0, partIndex--);
+    if (partIndex < 0) {
+      isDeleting = false;
+      part = (part + 1) % phrases.length;
+    }
+  } else {
+    element.textContent = text.substring(0, partIndex++);
+    if (partIndex > text.length + 5) {
+      isDeleting = true;
+    }
+  }
+  setTimeout(typeLoop, isDeleting ? 50 : 120);
+}
+
+typeLoop();
+
