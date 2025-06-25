@@ -1,0 +1,92 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: #0a0a0a;
+  font-family: 'Segoe UI', sans-serif;
+  color: #e0e0e0;
+}
+
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  padding: 60px 20px;
+  max-width: 850px;
+  margin: auto;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #00ffc3;
+  text-shadow: 0 0 10px #00ffc3;
+  margin-bottom: 10px;
+}
+
+section {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(0, 255, 195, 0.2);
+  padding: 20px;
+  margin: 40px 0;
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 0 0 15px #00ffc3aa;
+}
+
+h2 {
+  color: #00ffc3;
+  text-shadow: 0 0 5px #00ffc3;
+  margin-bottom: 10px;
+}
+
+p, li {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #d0d0d0;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li::marker {
+  color: #00ffc3;
+}
+
+.social {
+  margin-bottom: 30px;
+}
+
+.social a {
+  color: #00ffc3;
+  margin: 0 10px;
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+
+.social a:hover {
+  color: #ffffff;
+}
+
+.quote {
+  margin-top: 30px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.02);
+  border-left: 3px solid #00ffc3;
+  font-style: italic;
+  color: #aaa;
+  line-height: 1.6;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 40px;
+  color: #00ffc3;
+}
